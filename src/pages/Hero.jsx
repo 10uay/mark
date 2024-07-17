@@ -12,7 +12,7 @@ export default function Hero({ loading }) {
       {!loading && (
         <div className="w-full absolute md:top-[570px] top-[450px]">
           <motion.img
-            src="../../public/images/image-2.jpeg"
+            src="/images/image-2.jpeg"
             alt="main image"
             className="w-[1300px] h-[500px] object-cover object-center mx-auto"
             layoutId="main-image"
