@@ -2,7 +2,7 @@ export default function Logo() {
   return (
     <div>
       <img
-        src="../../public/images/logo-light.svg"
+        src="/images/logo-light.svg"
         alt="logo"
         className="w-20 md:w-28 dark:hidden"
       />

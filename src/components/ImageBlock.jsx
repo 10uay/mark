@@ -3,7 +3,7 @@ import {  motion } from "framer-motion";
 export default function ImageBlock({ src, alt, moreClasses, id, variants }) {
   return (
     <motion.div
-      className={`image-block w-[200px] rounded-xl overflow-hidden ${moreClasses}`}
+      className={`image-block md:w-[200px] rounded-xl overflow-hidden ${moreClasses}`}
       variants={variants}
     >
       <img

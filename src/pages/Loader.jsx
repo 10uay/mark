@@ -62,7 +62,7 @@ export default function Loader({ setLoader }) {
       onAnimationComplete={() => setLoader(false)}
     >
       <ImageBlock
-        src="../../public/images/image-1.jpg"
+        src="/images/image-1.jpg"
         alt="image-1"
         moreClasses={`
           ${fixedClasses} 
@@ -83,7 +83,7 @@ export default function Loader({ setLoader }) {
         className="w-[600px] rounded-xl overflow-hidden absolute top-1/2 left-1/2 !transform -translate-x-1/2 -translate-y-1/2"
       >
         <motion.img
-          src="../../public/images/image-2.jpeg"
+          src="/images/image-2.jpeg"
           alt="main image"
           className="object-cover object-center "
           layoutId="main-image"
@@ -91,7 +91,7 @@ export default function Loader({ setLoader }) {
       </motion.div>
 
       <ImageBlock
-        src="../../public/images/image-3.png"
+        src="/images/image-3.png"
         alt="image-3"
         moreClasses={`
           ${fixedClasses} 
@@ -106,7 +106,7 @@ export default function Loader({ setLoader }) {
         variants={item}
       />
       <ImageBlock
-        src="../../public/images/image-4.png"
+        src="/images/image-4.png"
         alt="image-4"
         moreClasses={`
           ${fixedClasses} 
@@ -121,7 +121,7 @@ export default function Loader({ setLoader }) {
         variants={item}
       />
       <ImageBlock
-        src="../../public/images/image-5.jpg"
+        src="/images/image-5.jpg"
         alt="image-5"
         moreClasses={`
           ${fixedClasses} 

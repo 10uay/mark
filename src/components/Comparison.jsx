@@ -66,7 +66,7 @@ export default function Comparison() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          src="../../public/images/VS.svg"
+          src="/images/VS.svg"
           alt=""
           className="w-20"
         />
@@ -93,7 +93,7 @@ export default function Comparison() {
               className="flex justify-center items-center gap-3"
             >
               <img
-                src="../../public/images/false.svg"
+                src="/images/false.svg"
                 alt="x"
                 className="w-5"
               />
@@ -104,7 +104,7 @@ export default function Comparison() {
               className="flex justify-center items-center gap-3"
             >
               <img
-                src="../../public/images/false.svg"
+                src="/images/false.svg"
                 alt="x"
                 className="w-5"
               />
@@ -115,7 +115,7 @@ export default function Comparison() {
               className="flex justify-center items-center gap-3"
             >
               <img
-                src="../../public/images/false.svg"
+                src="/images/false.svg"
                 alt="x"
                 className="w-5"
               />
@@ -139,21 +139,21 @@ export default function Comparison() {
               variants={itemRight}
               className="flex justify-center items-center gap-3"
             >
-              <img src="../../public/images/true.svg" alt="x" className="w-5" />
+              <img src="/images/true.svg" alt="x" className="w-5" />
               <span>Lightning fast implementation</span>
             </motion.div>
             <motion.div
               variants={itemRight}
               className="flex justify-center items-center gap-3"
             >
-              <img src="../../public/images/true.svg" alt="x" className="w-5" />
+              <img src="/images/true.svg" alt="x" className="w-5" />
               <span>2000 avadabiuty for partners</span>
             </motion.div>
             <motion.div
               variants={itemRight}
               className="flex justify-center items-center gap-3"
             >
-              <img src="../../public/images/true.svg" alt="x" className="w-5" />
+              <img src="/images/true.svg" alt="x" className="w-5" />
               <span>Learnings from 250$ million in sales</span>
             </motion.div>
           </motion.div>

@@ -92,12 +92,12 @@ export default function Footer11  (props)  {
  const Footer11Defaults = {
   logo: {
     url: "#",
-    src: "../../public/images/logo-light.svg",
+    src: "/images/logo-light.svg",
     alt: "Logo image",
   },
   logoDark: {
     url: "#",
-    src: "../../public/images/logo-dark.svg",
+    src: "/images/logo-dark.svg",
     alt: "Logo image",
   },
   address: {
