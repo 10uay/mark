@@ -1,0 +1,7 @@
+ul > li {
+    
+}
+
+ul > li:hover {
+  @apply cursor-pointer hover:text-text_yellow
+}
