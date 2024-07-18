@@ -69,14 +69,14 @@ export default function Footer11  (props)  {
             <a href={`https://wa.me/+963948911648`} target="_blank" rel="noopener noreferrer" className="text-myYellow">
               { ' '}Louay
             </a>
-            {' '}&{ ' '}
+            {/* {' '}&{ ' '}
             <a href={`https://wa.me/+963936066472`} target="_blank" rel="noopener noreferrer" className="text-myYellow">
                     Khaola
-                  </a>
+                  </a> */}
           </p>
           <ul className="flex justify-between items-center gap-5 gap-y-4 text-sm  md:gap-x-6 md:gap-y-0">
             {footerLinks.map((link, index) => (
-              <li key={index} className="underline">
+              <li key={index} className="underline text-center">
                 <a href={link.url} className="focus-visible:outline-none">
                   {link.title}
                 </a>

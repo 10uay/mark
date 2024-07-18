@@ -1,6 +1,8 @@
 import GlassCard from "../components/GlassCard";
 import { motion, easeInOut } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
+import './CardsSection.css'
+
 
 export default function CardsSection() {
   const container = {
@@ -75,18 +77,18 @@ export default function CardsSection() {
               {/*  */}
               {/* boxes */}
               <div className="absolute top-[44%] left-[44%] -translate-x-1/2 -translate-y-1/2 transform rotate-[45deg] text-[18px] flex justify-center items-center gap-x-24">
-                <span className="py-1 px-4 rounded-[10px] border-[1px]">
+                <span className="py-1 px-4 rounded-[10px] border-[1px] playwrite-hr-lijeva">
                   Behance
                 </span>
-                <span className="py-1 px-4 rounded-[10px] border-[1px]">
+                <span className="py-1 px-4 rounded-[10px] border-[1px] playwrite-hr-lijeva">
                   Insta
                 </span>
               </div>
               <div className="absolute bottom-[54%] right-[47%] translate-x-1/2 translate-y-1/2 transform -rotate-[45deg] text-[18px] flex justify-center items-center gap-x-24">
-                <span className="py-1 px-4 rounded-[10px] border-[1px]">
+                <span className="py-1 px-4 rounded-[10px] border-[1px] playwrite-hr-lijeva">
                   Dribble
                 </span>
-                <span className="py-1 px-4 rounded-[10px] border-[1px]">
+                <span className="py-1 px-4 rounded-[10px] border-[1px] playwrite-hr-lijeva">
                   Facebook
                 </span>
               </div>
@@ -102,18 +104,18 @@ export default function CardsSection() {
               "We develop websites and online shaps that turn visitors into customers."
             }
           >
-            <div className=" relative flex flex-col justify-start gap-4 mt-20">
+            <div className=" relative flex flex-col justify-start gap-4 mt-20 font-pl">
               {/* design */}
-              <span className="block border-white rounded-[60px] text-[25px] px-6 py-1 bg-[#fce37e] w-1/2 border-[1px] text-center dark:text-[#494949]">
+              <span className=" playwrite-hr-lijeva font-bold block border-white rounded-[60px] text-[25px] px-6 py-1 bg-[#fce37e] w-1/2 border-[1px] text-center dark:text-[#494949]">
                 Design
               </span>
               {/* coding */}
-              <span className="block border-white rounded-[60px] text-[25px] px-6 py-1 bg-[#fce37e] w-1/2 ml-auto border-[1px] text-center dark:text-[#303030]">
+              <span className=" playwrite-hr-lijeva font-bold block border-white rounded-[60px] text-[25px] px-6 py-1 bg-[#fce37e] w-1/2 ml-auto border-[1px] text-center dark:text-[#303030]">
                 Coding
               </span>
 
               {/* user testing */}
-              <span className="block border-white rounded-[60px] text-[25px] px-6 py-1 bg-[#fce37e] w-fit border-[1px] text-center dark:text-[#161616]">
+              <span className=" playwrite-hr-lijeva font-bold block border-white rounded-[60px] text-[25px] px-6 py-1 bg-[#fce37e] w-fit border-[1px] text-center dark:text-[#161616]">
                 User Testing
               </span>
             </div>
@@ -130,11 +132,11 @@ export default function CardsSection() {
           >
             <div className="my-10 relative flex flex-col justify-center items-center gap-7">
               {/* ps */}
-              <span className="w-[100px] h-[100px] text-[32px] bg-[#fce37e] border-white border-2 flex justify-center items-center trnsform -translate-x-14 translate-y-7 dark:text-[#494949]">
+              <span className=" playwrite-hr-lijeva font-bold w-[100px] h-[100px] text-[32px] bg-[#fce37e] border-white border-2 flex justify-center items-center trnsform -translate-x-14 translate-y-7 dark:text-[#494949]">
                 Ps
               </span>
               {/* ae */}
-              <span className="w-[100px] h-[100px] text-[32px] bg-[#fce37e] border-white border-2 flex justify-center items-center translate-x-14 -translate-y-7 dark:text-[#161616]">
+              <span className=" playwrite-hr-lijeva font-bold w-[100px] h-[100px] text-[32px] bg-[#fce37e] border-white border-2 flex justify-center items-center translate-x-14 -translate-y-7 dark:text-[#161616]">
                 Ae
               </span>
             </div>

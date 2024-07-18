@@ -62,7 +62,7 @@ export default function Email(props) {
         </motion.div>
         <motion.div
           variants={itemRight}
-          className="bg-myYellow p-5 outline outline-[1.5px] dark:outline-myYellow outline-black border-8 border-white dark:border-main_dark w-fit mx-auto md:mx-0"
+          className="bg-myYellow p-5 outline outline-[1.5px] dark:outline-myYellow outline-black border-8 border-white dark:border-[#131313] w-fit mx-auto md:mx-0"
         >
           <div className="mb-4 grid max-w-sm grid-cols-1 gap-y-3 sm:grid-cols-[1fr_max-content] sm:gap-4 ">
             <Input

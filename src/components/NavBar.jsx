@@ -10,7 +10,6 @@ export default function NavBar() {
     <div className="flex justify-between items-center py-2 md:px-8 px-3 font-serif md:mx-20">
       {/* logo */}
       <Logo />
-      {/* <div className="text-3xl font-bold">Ollie</div> */}
 
       {/* list */}
       <ul className="hidden lg:flex justify-between items-center gap-10">
@@ -35,7 +34,7 @@ export default function NavBar() {
       {/* work together */}
       <div className=" underline flex justify-between items-center gap-7">
         <SwitchDarkLight />
-        <div className="hover:cursor-pointer">
+        <div className="hover:cursor-pointer hidden sm:inline-block">
           <Link to="email" smooth={true} duration={500}>
             Let’s work together
           </Link>

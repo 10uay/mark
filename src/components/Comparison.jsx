@@ -15,7 +15,7 @@ export default function Comparison() {
   const itemRight = {
     hidden: {
       opacity: 0,
-      x: 200,
+      x: -100,
     },
     show: {
       opacity: 1,
@@ -30,7 +30,7 @@ export default function Comparison() {
   const itemLeft = {
     hidden: {
       opacity: 0,
-      x: -200,
+      x: -100,
     },
     show: {
       opacity: 1,
@@ -58,7 +58,7 @@ export default function Comparison() {
   };
 
   return (
-    <div className="py-16 container">
+    <div className="py-16 container px-2 sm:px-0">
       <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-5">
         <span className="text-center text-[30px] font-bold uppercase">
           Other Agency

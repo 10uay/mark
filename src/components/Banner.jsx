@@ -43,7 +43,7 @@ const AnimatedLetters = ({ title }) => (
       <motion.span
         key={index}
         variants={letterAni}
-        className="inline-block relative 2xl:text-[160px] lg:text-[130px] md:text-[100px] text-[60px] z-30 text-border text-white md:h-[200px]"
+        className="inline-block relative 2xl:text-[160px] lg:text-[130px] md:text-[100px] text-[55px] z-30 text-border text-white md:h-[200px]"
       >
         {letter}
       </motion.span>

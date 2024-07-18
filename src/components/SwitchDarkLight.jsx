@@ -12,7 +12,7 @@ export default function SwitchDarkLight() {
   return (
     <div>
       <div
-        className=" text-[23px] hover:cursor-pointer"
+        className="text-[23px] hover:cursor-pointer z-40 relative"
         color="gray"
         onClick={() => dispatch(toggleTheme())}
       >

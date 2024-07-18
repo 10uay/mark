@@ -35,9 +35,9 @@ export default function DashSideBar() {
       animate={isOpen ? "open" : "closed"}
       // custom={height}
       // ref={containerRef}
-      className={` absolute top-0 right-0 ${
-        isOpen ? "h-[33vh] min-w-64" : "h-[70px] delay-1000 min-w-64"
-      } fixed rounded-lg overflow-hidden flex flex-col items-end justify-between z-40`}
+      className={`absolute -top-1 right-0 ${
+        isOpen ? "h-[45vh] min-w-64" : "h-[70px] delay-1000 min-w-64"
+      } fixed rounded-lg overflow-hidden flex flex-col items-end justify-between ${isOpen ? 'z-50' : 'z-30' }`}
     >
       <motion.div
         className="bg-gray-500 absolute top-0 right-0 w-full h-full"
