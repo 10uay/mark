@@ -1,18 +1,19 @@
-import { motion, easeInOut } from "framer-motion";
+import { motion } from "framer-motion";
 import Images from "../lib/Images";
 import { useState, useRef, useEffect } from "react";
 
 export default function Swiper() {
-
-  const [width, setWidth] = useState();
+  const [width, setWidth] = useState(1740);
   const carousel = useRef();
   useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    carousel.current.scrollWidth - carousel.current.offsetWidth === 0
+      ? setWidth(width)
+      : setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
     console.log(width);
   }, [width]);
 
   return (
-    <div className="overflow-hidden py-16">
+    <div ref={carousel} className="overflow-hidden py-16">
       <h2 className="text-center text-[30px] font-bold uppercase">
         All Projects
       </h2>
@@ -24,7 +25,6 @@ export default function Swiper() {
         As individual as you
       </p>
       <motion.div
-        ref={carousel}
         drag="x"
         dragConstraints={{ right: 0, left: -width }}
         whileTap={{ cursor: "grabbing" }}
@@ -33,11 +33,7 @@ export default function Swiper() {
         {Images.map((img, index) => {
           return (
             <motion.div key={index} className="min-w-[250px]">
-              <img
-                src={img}
-                alt="Swiper Img"
-                className="pointer-events-none"
-              />
+              <img src={img} alt="Swiper Img" className="pointer-events-none" />
             </motion.div>
           );
         })}

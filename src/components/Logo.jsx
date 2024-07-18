@@ -7,7 +7,7 @@ export default function Logo() {
         className="w-20 md:w-28 dark:hidden"
       />
       <img
-        src="../../public/images/logo-dark.svg"
+        src="/images/logo-dark.svg"
         alt="logo"
         className="w-20 md:w-28 dark:inline-block hidden"
       />

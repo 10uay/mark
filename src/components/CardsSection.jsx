@@ -33,7 +33,7 @@ export default function CardsSection() {
   const carousel = useRef();
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-    console.log(width);
+    // console.log(width);
   }, [width]);
 
   return (
