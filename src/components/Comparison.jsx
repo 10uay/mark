@@ -1,4 +1,6 @@
 import { motion, easeInOut } from "framer-motion";
+import { FaSquareCheck } from "react-icons/fa6";
+import { FaSquareXmark } from "react-icons/fa6";
 
 export default function Comparison() {
 
@@ -92,33 +94,21 @@ export default function Comparison() {
               variants={itemLeft}
               className="flex justify-center items-center gap-3"
             >
-              <img
-                src="/images/false.svg"
-                alt="x"
-                className="w-5"
-              />
+              <FaSquareXmark className="text-xl text-red-700" />
               <span>Slow to implement</span>
             </motion.div>
             <motion.div
               variants={itemLeft}
               className="flex justify-center items-center gap-3"
             >
-              <img
-                src="/images/false.svg"
-                alt="x"
-                className="w-5"
-              />
+              <FaSquareXmark className="text-xl text-red-700" />
               <span>Poor communication</span>
             </motion.div>
             <motion.div
               variants={itemLeft}
               className="flex justify-center items-center gap-3"
             >
-              <img
-                src="/images/false.svg"
-                alt="x"
-                className="w-5"
-              />
+              <FaSquareXmark className="text-xl text-red-700" />
               <span>Inexperieneced Juniors</span>
             </motion.div>
           </motion.div>
@@ -139,21 +129,21 @@ export default function Comparison() {
               variants={itemRight}
               className="flex justify-center items-center gap-3"
             >
-              <img src="/images/true.svg" alt="x" className="w-5" />
+              <FaSquareCheck className="text-xl text-myYellow" />
               <span>Lightning fast implementation</span>
             </motion.div>
             <motion.div
               variants={itemRight}
               className="flex justify-center items-center gap-3"
             >
-              <img src="/images/true.svg" alt="x" className="w-5" />
+              <FaSquareCheck className="text-xl text-myYellow" />
               <span>2000 avadabiuty for partners</span>
             </motion.div>
             <motion.div
               variants={itemRight}
               className="flex justify-center items-center gap-3"
             >
-              <img src="/images/true.svg" alt="x" className="w-5" />
+              <FaSquareCheck className="text-xl text-myYellow" />
               <span>Learnings from 250$ million in sales</span>
             </motion.div>
           </motion.div>

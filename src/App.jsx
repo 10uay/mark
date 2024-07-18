@@ -12,13 +12,13 @@ import { Element } from "react-scroll";
 
 function App() {
   const [loader, setLoader] = useState(true);
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const handleLoad = () => setLoading(false);
-    window.addEventListener("load", handleLoad);
-    return () => window.removeEventListener("load", handleLoad);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -52,7 +52,8 @@ function App() {
 
                 <FooterM />
               </div>
-            )}</>
+            )}
+          </>
         )}
       </AnimatePresence>
     </LayoutGroup>

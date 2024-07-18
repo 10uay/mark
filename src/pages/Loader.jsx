@@ -1,5 +1,8 @@
 import ImageBlock from "../components/ImageBlock";
 import { easeInOut, motion } from "framer-motion";
+import { useSelector, useDispatch } from "react-redux";
+
+
 
 export default function Loader({ setLoader }) {
   // Variants
@@ -50,7 +53,10 @@ export default function Loader({ setLoader }) {
   };
 
   const fixedClasses =
-    "absolute  xxl:w-[200px] xxl:h-72  xl:w-[200px] xl:h-72  lg:w-[200px] lg:h-72  md:w-[200px] md:h-60  sm:w-[200px] sm:h-60  w-[120px] h-52 "
+    "absolute xxl:w-[200px] xxl:h-72 xl:w-[200px] xl:h-72 lg:w-[200px] lg:h-72 md:w-[200px] md:h-60 sm:w-[200px] sm:h-60 w-[120px] h-52";
+
+  // const { counter } = useSelector((state) => state.counter);
+  // const dispatch = useDispatch()
 
   return (
     <motion.div
@@ -61,7 +67,7 @@ export default function Loader({ setLoader }) {
       exit="exit"
       onAnimationComplete={() => setLoader(false)}
     >
-      <ImageBlock
+      {/* <ImageBlock
         src="/images/image-1.jpg"
         alt="image-1"
         moreClasses={`
@@ -75,7 +81,8 @@ export default function Loader({ setLoader }) {
         `}
         id="image-1"
         variants={item}
-      />
+        handleImageLoad={() => dispatch(counter())}
+      /> */}
 
       {/* img 2 the main one */}
       <motion.div
@@ -120,7 +127,7 @@ export default function Loader({ setLoader }) {
         id="image-4"
         variants={item}
       />
-      <ImageBlock
+      {/* <ImageBlock
         src="/images/image-5.jpg"
         alt="image-5"
         moreClasses={`
@@ -134,7 +141,7 @@ export default function Loader({ setLoader }) {
         `}
         id="image-5"
         variants={item}
-      />
+      /> */}
     </motion.div>
   );
 }

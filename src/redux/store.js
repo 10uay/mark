@@ -3,9 +3,10 @@ import { persistReducer, persistStore } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 // import userSlice from './user/userSlice.js'
 import themeSlice from './theme/themeSlice.js'
+import counterSlice from './counter/counterSlice.js'
 
 const rootReducer = combineReducers({
-    // user: userSlice,
+    counter: counterSlice,
     theme: themeSlice
 })
 

@@ -12,7 +12,9 @@ const LoaderC = () => (
   >
     <Box sx={{ width: "40%" }}>
       <h1 style={{ textAlign: "center" }}>Loading...</h1>
-      <LinearProgress />
+      <LinearProgress
+        sx={{ "& .MuiLinearProgress-bar": { backgroundColor: "#FFCD05" } }}
+      />
     </Box>
   </Box>
 );
